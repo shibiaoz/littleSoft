@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"blue",
+    "navigationBarBackgroundColor": "blue",
+    "navigationBarTitleText": "头脑王者-知乎赛季",
+    "navigationBarTextStyle":"#fff"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

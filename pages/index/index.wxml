@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="user-level-wrap">
+      <view class="level-text">
+        <text>level7</text>
+      </view>
+      <view class='level-image'>
+        <text>icon image</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='card-wraper'>
+    <view class='card-layout'>
+      <view class='card-item' style='height:100px;'>
+        <text>排位赛</text>
+      </view>
+      <view class='card-item' style='height:50px;'>
+        <text>商店</text>
+      </view>
+       <view class='card-item' style='height:50px;'>
+        <text>商店</text>
+      </view>
+    </view>
+    <view class='card-layout'>
+      <view class='card-item' style='height:90px;'>
+        <text>排行榜</text>
+      </view>
+       <view class='card-item' style='height:80px;'>
+        <text>好友对战</text>
+      </view>
+    </view>
+  </view>
+
+</view>
